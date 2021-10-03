@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <link rel='stylesheet' href='styles.css' />
+        <title>FeedBack Survey</title>
+    </head>
+    <body>
+        <div class='header'>
+            <h1>Thank you for your purchase! Please take a few minutes to fill out this feedback form to let us know how we're doing.</h1>
+        </div>
+        <form id='full-form'>
+            <label for='fname'></label>1. First Name:</label>
+            <input type='text' id='fname' name='fname' /> <br>
+
+            <label for='lname'>2. Last Name:</label>
+            <input type='text' id='lname' name='lname' /> <br>
+
+            <label for='age'>3. Age:</label>
+            <input type='number' id='age' name='age' /> <br>
+
+            <label for='yes/no'>4. Is this your first shopping experience with us?</label>
+            <input type='radio' id='yes' name='yes/no'  value='Yes'/>Yes
+            <input type='radio' id='no' name='yes/no'  value='No'/>No <br>
+
+            <label for='recommend'>5. How likely are you to recommend us?</label> <br>
+            <input type='radio' name='recommend' class='option' value='Very Likely'/>Very Likely <br>
+            <input type='radio' name='recommend' class='option' value='Somewhat Likely'/>Somewhat Likely <br>
+            <input type='radio' name='recommend' class='option' value='Not Likely'/>Not Likely <br>
+            <input type='radio' name='recommend' class='option' value='Would not recommend'/>I would not recommend <br>
+
+            <label for='favorite-thing'>6. What were your favorite thing&#40;s&#41; about shopping with us?</label> <br>
+            <input type='checkbox' name='favorite-thing' value='Website Layout' class='option'/>Website Layout <br>
+            <input type='checkbox' name='favorite-thing' value='Product Variety' class='option'/>Product Variety <br>
+            <input type='checkbox' name='favorite-thing' value='Easy Purchasing Experience' class='option'/>Easy Purchasing Experience <br>
+            <input type='checkbox' name='favorite-thing' value='Pricing' class='option'/>Pricing <br>
+            <div id='checked-box-result'></div>
+
+            <button id='submit'>Submit</button>
+        </form>
+    </body>
+    <script src='main2.js'></script>
+</html>
